@@ -32,7 +32,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onRequestQuote }) => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/public/home/public/0c9ea2a3-bea9-4d2f-8a79-b3bf7be8ea74.png")',
+          backgroundImage: 'url("/public/0c9ea2a3-bea9-4d2f-8a79-b3bf7be8ea74.png")',
         }}
       />
       
