@@ -218,7 +218,7 @@ const LeadForm: React.FC = () => {
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                      placeholder="(313) 889-3324"
+                      placeholder="(312) 889-3324"
                       required
                     />
                   </div>

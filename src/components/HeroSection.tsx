@@ -114,13 +114,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onRequestQuote }) => {
 
           <motion.div variants={itemVariants} className="flex justify-center">
             <motion.a
-              href="tel:+1-313-889-3324"
+              href="tel:+1-312-889-3324"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200 flex items-center justify-center shadow-lg hover:shadow-xl"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Call Now: (313) 889-3324
+              Call Now: (312) 889-3324
             </motion.a>
           </motion.div>
         </motion.div>

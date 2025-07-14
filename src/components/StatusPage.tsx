@@ -192,13 +192,13 @@ const StatusPage: React.FC = () => {
               </h3>
               <div className="space-y-3">
                 <motion.a
-                  href="tel:+1-313-889-3324"
+                  href="tel:+1-312-889-3324"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  Call (313) 889-3324
+                  Call (312) 889-3324
                 </motion.a>
                 <motion.a
                   href="mailto:quotes@gejanitorial.com"

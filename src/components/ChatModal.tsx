@@ -100,7 +100,7 @@ const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
       console.error('Chat error:', error);
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "I'm experiencing some technical difficulties. Please try again or contact us directly at (313) 889-3324.",
+        text: "I'm experiencing some technical difficulties. Please try again or contact us directly at (312) 889-3324.",
         isUser: false,
         timestamp: new Date()
       };
@@ -193,9 +193,9 @@ const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
             {/* Contact Info Bar - Desktop */}
             <div className="hidden md:flex bg-gray-50 px-6 py-3 border-b items-center justify-between text-sm">
               <div className="flex items-center space-x-6">
-                            <a href="tel:+1-313-889-3324" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                            <a href="tel:+1-312-889-3324" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
               <Phone className="w-4 h-4 mr-1" />
-              (313) 889-3324
+              (312) 889-3324
                 </a>
                 <a href="mailto:info@gejanitorial.com" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
                   <Mail className="w-4 h-4 mr-1" />
@@ -276,7 +276,7 @@ const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
             <div className="md:hidden bg-gray-50 px-4 py-3 border-t">
               <div className="flex items-center justify-between">
                 <div className="flex space-x-4">
-                            <a href="tel:+1-313-889-3324" className="flex items-center text-blue-600 text-sm">
+                            <a href="tel:+1-312-889-3324" className="flex items-center text-blue-600 text-sm">
             <Phone className="w-4 h-4 mr-1" />
                     Call
                   </a>
