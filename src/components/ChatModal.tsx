@@ -197,9 +197,9 @@ const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
                   <Phone className="w-4 h-4 mr-1" />
                   (312) 889-3324
                 </a>
-                <a href="mailto:info@gejanitorial.com" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                <a href="mailto:info@gejanitorialsolutions.com" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
                   <Mail className="w-4 h-4 mr-1" />
-                  info@gejanitorial.com
+                  info@gejanitorialsolutions.com
                 </a>
               </div>
               <motion.a
@@ -280,7 +280,7 @@ const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
                     <Phone className="w-4 h-4 mr-1" />
                     Call
                   </a>
-                  <a href="mailto:info@gejanitorial.com" className="flex items-center text-blue-600 text-sm">
+                  <a href="mailto:info@gejanitorialsolutions.com" className="flex items-center text-blue-600 text-sm">
                     <Mail className="w-4 h-4 mr-1" />
                     Email
                   </a>
