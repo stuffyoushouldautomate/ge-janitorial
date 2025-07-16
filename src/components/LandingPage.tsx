@@ -4,12 +4,26 @@ import HeroSection from './HeroSection';
 import ServicesSection from './ServicesSection';
 import LeadForm from './LeadForm';
 import ModalLeadForm from './ModalLeadForm';
-import ChatModal from './ChatModal';
+import { ChatModal, ChatButton, createChatConfig } from '../modules/chat';
 
 const LandingPage: React.FC = () => {
   const [showForm, setShowForm] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showChat, setShowChat] = useState(false);
+
+  const chatConfig = createChatConfig({
+    companyName: "GE Janitorial Assistant",
+    companyPhone: "(312) 889-3324",
+    companyEmail: "info@gejanitorialsolutions.com",
+    apiEndpoint: "https://flowise-production-1547.up.railway.app/api/v1/prediction/1799f45d-99ea-4dcc-b7b3-a5c7f4dfb435",
+    brandColors: {
+      primary: "#2563eb", // blue-600
+      secondary: "#1e40af", // blue-800
+      accent: "#eab308" // yellow-500
+    },
+    welcomeMessage: "Hi! I'm here to help you with your industrial cleaning needs. What can I assist you with today?",
+    placeholderText: "Ask about our cleaning services..."
+  });
 
   const handleRequestQuote = () => {
     setShowModal(true);
@@ -48,26 +62,14 @@ const LandingPage: React.FC = () => {
       <ChatModal 
         isOpen={showChat} 
         onClose={() => setShowChat(false)} 
+        config={chatConfig}
       />
       
       {/* Floating Chat Button */}
-      <motion.button
-        onClick={handleOpenChat}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full shadow-lg z-40 flex items-center"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2, duration: 0.6 }}
-      >
-        <span className="hidden sm:inline mr-2">Chat Now</span>
-        <motion.div
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-        >
-          💬
-        </motion.div>
-      </motion.button>
+      <ChatButton 
+        onClick={() => setShowChat(true)}
+        config={chatConfig}
+      />
     </div>
   );
 };
